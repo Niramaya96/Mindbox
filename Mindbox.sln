@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Mindbox\Database.csproj", "{CF945FBE-39DE-4F7C-983B-46EF03B53463}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeLibrary", "ShapeLibrary\ShapeLibrary.csproj", "{1EBFF2B8-62F4-433E-9BC3-F54ADA8029F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shape", "Shape", "{1CC3F720-93B8-41AE-BD1E-8EC152B67682}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{29E09F26-E34A-42F7-AC1A-549984DD016F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF945FBE-39DE-4F7C-983B-46EF03B53463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF945FBE-39DE-4F7C-983B-46EF03B53463}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF945FBE-39DE-4F7C-983B-46EF03B53463}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF945FBE-39DE-4F7C-983B-46EF03B53463}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1EBFF2B8-62F4-433E-9BC3-F54ADA8029F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1EBFF2B8-62F4-433E-9BC3-F54ADA8029F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EBFF2B8-62F4-433E-9BC3-F54ADA8029F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -30,7 +22,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CF945FBE-39DE-4F7C-983B-46EF03B53463} = {29E09F26-E34A-42F7-AC1A-549984DD016F}
 		{1EBFF2B8-62F4-433E-9BC3-F54ADA8029F4} = {1CC3F720-93B8-41AE-BD1E-8EC152B67682}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
