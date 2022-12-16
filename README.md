@@ -10,14 +10,20 @@
 
 - Проверку на то, является ли треугольник прямоугольным"
 
+## Решение:
+
+[Библиотека](https://github.com/Niramaya96/Mindbox/tree/master/ShapeLibrary)
+
+[Тесты](https://github.com/Niramaya96/Mindbox/tree/master/MyShapeLib.Tests)
+
 # Задача на SQL
 
 В базе данных MS SQL Server есть продукты и категории. Одному продукту может соответствовать много категорий, в одной категории может быть много продуктов.
 Напишите SQL запрос для выбора всех пар «Имя продукта – Имя категории». Если у продукта нет категорий, то его имя все равно должно выводиться.
 
-Решение: 
+## Решение: 
 
-## 1) Создадим Таблицы:
+### 1) Создадим Таблицы:
 
 ```
   CREATE TABLE Products(id INT PRIMARY KEY, name VARCHAR(255) NOT NULL);
@@ -26,14 +32,14 @@
 ```
   
   
-## 2) Заполним таблицы:
+### 2) Заполним таблицы:
 ```
 INSERT INTO Products VALUES(1, 'Порошок'), (2, 'Мыло'), (3, 'Яблоко'), (4, 'Спортивная куртка');
 INSERT INTO Category VALUES(1, 'Хоз-товары'), (2, 'Продукты питания');
 INSERT INTO ProductCategories VALUES(1, 1), (2, 1), (3, 2);
 ```
 
-## 3) Выполним запрос:
+### 3) Выполним запрос:
 ```
     SELECT prod.name [Product], cat.name [Category] FROM Products prod 
       LEFT JOIN ProductCategories prodcat ON prod.id = prodcat.products_id 
