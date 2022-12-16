@@ -2,14 +2,14 @@
 {
     public class Circle : Shape
     {
-        public double Radius { get; set; }
+        public double Radius { get; private set; }
         public Circle(double radius)
         {
             Radius = radius;
         }
 
-        public override double GetArea() => Radius * Radius * 3.14;
-        public override double GetPerimeter() => Radius * 2 * 3.14;
+        public override double GetArea() => Math.Round(Math.Pow(Radius,2) * Math.PI,2);
+        public override double GetPerimeter() => Math.Round(Radius * 2 * Math.PI,2);
 
     }
 }

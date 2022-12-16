@@ -2,9 +2,9 @@
 {
     public class Triangle : Shape
     {
-        public double SideA { get; set; }
-        public double SideB { get; set; }
-        public double SideC { get; set; }
+        public double SideA { get; private set; }
+        public double SideB { get; private set; }
+        public double SideC { get; private set; }
 
         public Triangle(double sideA, double sideB, double sideC)
         {
@@ -21,14 +21,14 @@
 
             if (firstCase || secondCase || thirdCase)
                 return true;
-            return false;
 
+            return false;
         }
         public override double GetArea()
         {
-            double p = (SideA + SideB + SideC) / 2d;
+            double p = GetPerimeter() / 2d;
             double area = Math.Sqrt(p * (p - SideA) * (p - SideB) * (p - SideC));
-            return area;
+            return Math.Round(area,2);
         }
 
         public override double GetPerimeter() => SideA + SideB + SideC;
