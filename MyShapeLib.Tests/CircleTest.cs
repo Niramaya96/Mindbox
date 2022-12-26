@@ -19,19 +19,5 @@ namespace MyShapeLib.Tests
             //assert
             Assert.AreEqual(expected, result);
         }
-
-        [TestMethod]
-        public void GetPerimeter_10_Return_62_83()
-        {
-            //arrange
-            Circle circle = new Circle(10);
-            double expected = 62.83;
-
-            //act
-            double result = circle.GetPerimeter();
-
-            //assert
-            Assert.AreEqual(expected, result);
-        }
     }
 }

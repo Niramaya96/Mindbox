@@ -9,7 +9,6 @@
         }
 
         public override double GetArea() => Math.Round(Math.Pow(Radius,2) * Math.PI,2);
-        public override double GetPerimeter() => Math.Round(Radius * 2 * Math.PI,2);
 
     }
 }

@@ -20,29 +20,17 @@ namespace MyShapeLib.Tests
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
-        public void GetPerimeter_10_10_10_Return_30()
-        {
-            //arrange
-            Triangle triangle = new Triangle(10, 10, 10);
-            double expected = 30;
-
-            //act
-            double result = triangle.GetPerimeter();
-
-            //assert
-            Assert.AreEqual(expected, result);
-        }
+   
 
         [TestMethod]
-        public void CheckRightTriangle_10_10_10_Return_False()
+        public void IsRightTriangle_10_10_10_Return_False()
         {
             //arrange
             Triangle triangle = new Triangle(10, 10, 10);
             bool expected = false;
 
             //act
-            bool isRight = triangle.CheckRightTriangle();
+            bool isRight = triangle.IsRectangular();
 
             //assert
             Assert.AreEqual(expected, isRight);
@@ -56,7 +44,7 @@ namespace MyShapeLib.Tests
             bool expected = true;
 
             //act
-            bool isRight = triangle.CheckRightTriangle();
+            bool isRight = triangle.IsRectangular();
 
             //assert
             Assert.AreEqual(expected, isRight);

@@ -13,16 +13,13 @@
             SideC = sideC;
         }
 
-        public bool CheckRightTriangle()
+        public bool IsRectangular()
         {
             bool firstCase = SideA * SideA + SideB * SideB == SideC * SideC;
             bool secondCase = SideA * SideA + SideC * SideC == SideB * SideB;
             bool thirdCase = SideC * SideC + SideB * SideC == SideA * SideA;
 
-            if (firstCase || secondCase || thirdCase)
-                return true;
-
-            return false;
+            return firstCase || secondCase || thirdCase;
         }
         public override double GetArea()
         {
@@ -31,7 +28,7 @@
             return Math.Round(area,2);
         }
 
-        public override double GetPerimeter() => SideA + SideB + SideC;
+        private double GetPerimeter() => SideA + SideB + SideC;
         
     }
 }
